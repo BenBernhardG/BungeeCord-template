@@ -1,0 +1,59 @@
+prevent_proxy_connections: false
+listeners:
+- query_port: 25565
+  motd: '&a&k|| &c[ 1.7.x - Neuste ] &a&k| &4&l! &eNeue Texturen &4&l! &a&k| &6&lMinigames
+    &a&k||       &a&k|| &r&9&owww.BernhardBMX.net &a&k||'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    pvp.md-5.net: pvp
+  ping_passthrough: false
+  priorities:
+  - main_server
+  bind_local_address: true
+  host: 0.0.0.0:25565
+  max_players: 200
+  tab_size: 60
+  force_default_server: false
+remote_ping_cache: -1
+network_compression_threshold: 256
+permissions:
+  default:
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.server
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+log_pings: true
+connection_throttle_limit: 3
+server_connect_timeout: 5000
+timeout: 30000
+player_limit: -1
+ip_forward: true
+groups:
+  BernhardBMX:
+  - admin
+remote_ping_timeout: 5000
+connection_throttle: 4000
+log_commands: false
+stats: c4b9cabb-93e9-4bce-93ab-4b18642e6f3e
+online_mode: true
+forge_support: false
+disabled_commands:
+- disabledcommandhere
+servers:
+  main_server:
+    motd: '&9&owww.BernhardBMX.net'
+    address: mc.bernhardbmx.net:25577
+    restricted: false
+  CityBuild_server:
+    motd: '&9&owww.BernhardBMX.net'
+    address: mc.bernhardbmx.net:25588
+    restricted: false
+  BedWars_server:
+    motd: '&9&owww.BernhardBMX.net'
+    address: mc.bernhardbmx.net:25599
+    restricted: false
